@@ -63,6 +63,7 @@ class PaymentMethodType extends AbstractEnum
     const MOBILE_BALANCE = 'mobile_balance';
     /** латеж ApplePay */
     const APPLE_PAY      = 'apple_pay';
+    const MIR_PAY      = 'mir_pay';
     /** Платеж Google Pay */
     const GOOGLE_PAY     = 'google_pay';
     /** Платеж из кошелька Qiwi */
@@ -94,6 +95,7 @@ class PaymentMethodType extends AbstractEnum
         self::CASH           => true,
         self::MOBILE_BALANCE => false,
         self::APPLE_PAY      => false,
+        self::MIR_PAY      => true,
         self::GOOGLE_PAY     => false,
         self::QIWI           => true,
         self::WEBMONEY       => true,
